@@ -17,6 +17,114 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <title>Yoshi's</title>
+    <style>
+        .download-page {
+            width: min(960px, calc(100% - 32px));
+            margin: 28px auto 48px;
+        }
+
+        .download-hero,
+        .download-card {
+            background: rgba(15, 20, 28, 0.86);
+            border: 1px solid rgba(148, 163, 184, 0.16);
+            border-radius: 18px;
+            padding: 24px;
+        }
+
+        .download-hero h1 {
+            margin: 0 0 10px;
+            font-family: "Ubuntu", "Inter", sans-serif;
+            font-size: clamp(2rem, 4vw, 3.25rem);
+            line-height: 1.05;
+        }
+
+        .download-hero p,
+        .download-card p,
+        .download-card li {
+            color: #aab6c5;
+            line-height: 1.7;
+            margin-top: 0;
+        }
+
+        .download-actions {
+            margin-top: 18px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .download-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: 0 18px;
+            border-radius: 14px;
+            background: #64df8e;
+            color: #07110c;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .download-note {
+            font-size: 0.95rem;
+            color: #8e9bae;
+        }
+
+        .download-grid {
+            margin-top: 18px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .download-card h2 {
+            margin: 0 0 10px;
+            font-size: 1.15rem;
+        }
+
+        .steps,
+        .why-list {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .steps li,
+        .why-list li {
+            margin-bottom: 10px;
+        }
+
+        .small-label {
+            display: inline-block;
+            margin-bottom: 12px;
+            color: #64df8e;
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+
+        .download-muted {
+            padding: 14px 16px;
+            margin-top: 14px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(148, 163, 184, 0.12);
+            color: #aab6c5;
+        }
+
+        @media (max-width: 780px) {
+            .download-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .download-page {
+                width: min(100% - 20px, 960px);
+                margin-top: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -36,13 +144,53 @@
             </div>
         </header>
     </div>
-<main class="games-section">
-    <section class="section">
-        <h1>Download the offical FPMS Eaglercraft Server!</h1>
-        <p>You can download the client by clicking <a href="https://github.com/YoshiJunior/server/releases/download/1.0.0/client-WASM.html">here</a></p>
-        <p>Once you have downloaded the client, you can double click on the file in your Files app to open.</p>
-    </section>
 
-</main>
+    <main class="download-page">
+        <section class="download-hero">
+            <span class="small-label">Yoshi's Minecraft</span>
+            <h1>Download the official FPMS Eaglercraft Server!</h1>
+            <p>
+                This is a custom Tuff Client made for Yoshi's Minecraft server. The server is already added for you,
+                so you can download the file and start playing without entering the address yourself.
+            </p>
 
+            <div class="download-actions">
+                <a class="download-button" href="https://github.com/YoshiJunior/server/releases/download/1.0.0/client-WASM.html">
+                    Download Tuff Client
+                </a>
+                <span class="download-note">Standalone HTML file, ready to open in your browser.</span>
+            </div>
 
+            <div class="download-muted">
+                Server already configured, works in Chrome, Edge, Firefox, and other modern browsers.
+            </div>
+        </section>
+
+        <section class="download-grid" aria-label="Download instructions and details">
+            <article class="download-card">
+                <h2>How to open the client</h2>
+                <ol class="steps">
+                    <li>Download Tuff Client.</li>
+                    <li>Open your Downloads folder.</li>
+                    <li>Find the downloaded <code>.html</code> file.</li>
+                    <li>Double-click it to open it in your browser.</li>
+                </ol>
+                <div class="download-muted">
+                    If Windows asks which app to use, choose your normal web browser such as Chrome, Edge, or Firefox.
+                </div>
+            </article>
+
+            <article class="download-card">
+                <h2>Why use this client?</h2>
+                <ul class="why-list">
+                    <li>Your server is already in the server list.</li>
+                    <li>No need to manually type the server address.</li>
+                    <li>Everything is contained in one HTML file.</li>
+                    <li>You can open it directly after downloading.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>
