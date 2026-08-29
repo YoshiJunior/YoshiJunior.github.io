@@ -388,20 +388,6 @@ body {
   border-radius: 10px;
 }
 
-.server-link a {
-    position: relative;
-    font-weight: 700;
-    color: #7cff8b;
-    text-shadow: 0 0 8px rgba(124, 255, 139, 0.7);
-    transition: all 0.2s ease;
-}
-
-.server-link a:hover {
-    color: #b8ffc0;
-    text-shadow: 0 0 14px rgba(124, 255, 139, 1);
-    transform: translateY(-1px);
-}
-
 .new-badge {
     position: absolute;
     top: -13px;
@@ -435,4 +421,52 @@ body {
 
 ::-webkit-scrollbar-track {
   background: #111;
+}
+
+.server-nav {
+    position: relative;
+    display: inline-block;
+}
+
+.server-nav .new-text {
+    position: absolute;
+
+    top: -18px;
+    right: -30px;
+
+    font-size: 16px;
+    font-weight: 800;
+    font-style: italic;
+    color: #19c957;
+
+    transform: rotate(-5deg);
+
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.server-nav .new-text {
+    position: absolute;
+    top: -17px;
+    right: -28px;
+
+    font-size: 15px;
+    font-weight: 900;
+    font-style: italic;
+    color: #19c957;
+
+    transform: rotate(-7deg);
+    white-space: nowrap;
+
+    animation: newFloat 2s ease-in-out infinite;
+}
+
+@keyframes newFloat {
+    0%, 100% {
+        transform: rotate(-7deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(-7deg) translateY(-2px);
+    }
 }
