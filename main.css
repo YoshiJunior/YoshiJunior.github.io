@@ -388,6 +388,51 @@ body {
   border-radius: 10px;
 }
 
+.server-link a {
+    position: relative;
+    font-weight: 700;
+    color: #7cff8b;
+    text-shadow: 0 0 8px rgba(124, 255, 139, 0.7);
+    transition: all 0.2s ease;
+}
+
+.server-link a:hover {
+    color: #b8ffc0;
+    text-shadow: 0 0 14px rgba(124, 255, 139, 1);
+    transform: translateY(-1px);
+}
+
+.new-badge {
+    position: absolute;
+    top: -13px;
+    right: -25px;
+
+    font-size: 9px;
+    font-weight: 800;
+    line-height: 1;
+
+    padding: 3px 5px;
+    border-radius: 5px;
+
+    background: #7cff8b;
+    color: #102016;
+
+    box-shadow: 0 0 8px rgba(124, 255, 139, 0.7);
+
+    animation: newPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes newPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 8px rgba(124, 255, 139, 0.6);
+    }
+    50% {
+        transform: scale(1.08);
+        box-shadow: 0 0 14px rgba(124, 255, 139, 0.9);
+    }
+}
+
 ::-webkit-scrollbar-track {
   background: #111;
 }
