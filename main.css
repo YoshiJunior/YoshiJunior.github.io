@@ -458,15 +458,4 @@ body {
     transform: rotate(-7deg);
     white-space: nowrap;
 
-    animation: newFloat 2s ease-in-out infinite;
-}
-
-@keyframes newFloat {
-    0%, 100% {
-        transform: rotate(-7deg) translateY(0);
-    }
-
-    50% {
-        transform: rotate(-7deg) translateY(-2px);
-    }
 }
