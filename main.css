@@ -446,3 +446,29 @@ body {
     white-space: nowrap;
     pointer-events: none;
 }
+
+.new-text {
+    position: absolute;
+    top: -17px;
+    right: -28px;
+
+    font-size: 15px;
+    font-weight: 900;
+    font-style: italic;
+    color: #19c957;
+
+    transform: rotate(-7deg);
+    white-space: nowrap;
+
+    animation: newFloat 2s ease-in-out infinite;
+}
+
+@keyframes newFloat {
+    0%, 100% {
+        transform: rotate(-7deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(-7deg) translateY(-2px);
+    }
+}
