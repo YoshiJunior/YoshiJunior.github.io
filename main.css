@@ -432,7 +432,7 @@ body {
     position: absolute;
 
     /* Position relative to "Server" */
-    top: -25px;
+    top: -50px;
     right: -30px;
 
     font-size: 16px;
@@ -465,10 +465,10 @@ body {
 
 @keyframes newFloat {
     0%, 100% {
-        transform: rotate(-7deg) translateY(-2);
+        transform: rotate(-7deg) translateY(0);
     }
 
     50% {
-        transform: rotate(-7deg) translateY(-4px);
+        transform: rotate(-7deg) translateY(-2px);
     }
 }
