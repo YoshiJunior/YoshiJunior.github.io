@@ -449,7 +449,7 @@ body {
 
 .server-nav .new-text {
     position: absolute;
-    top: -17px;
+    top: 8px;
     right: -28px;
 
     font-size: 15px;
