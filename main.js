@@ -41,3 +41,20 @@
         }
     });
 });
+
+<script>
+
+const announcementOverlay =
+    document.getElementById("announcement-overlay");
+
+const announcementExit =
+    document.getElementById("announcement-exit");
+
+
+announcementExit.addEventListener("click", () => {
+
+    announcementOverlay.style.display = "none";
+
+});
+
+</script>
