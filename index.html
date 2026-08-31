@@ -539,6 +539,81 @@
     
     <script src="main.js"></script>
 
+<!-- Announcement Popup -->
+<div id="announcement-overlay" class="announcement-overlay">
 
+    <div class="announcement-card">
 
+        <!-- Banner Image -->
+        <img
+            src="Yoshi's Summer Update Banner.png"
+            alt="Yoshi's Summer Update"
+            class="announcement-banner"
+        >
+
+        <!-- Announcement Content -->
+        <div class="announcement-content">
+
+            <h2>Yoshi's Summer Update</h2>
+
+            <p>
+                Ok, so now that we are back to school and getting our
+                Chromebooks, I thought that I should make an announcement
+                about what I did with Yoshi's this summer.
+            </p>
+
+            <p>
+                First of all I think I have at least doubled the amount of
+                games on the site, adding games such as the Papa's Games,
+                more Subway Surfers, Balatro, Ultrakill, and many, many more.
+            </p>
+
+            <p>
+                Also, another game that took me at least a week or more to
+                plan and setup, which I am very happy to be done with, is a
+                school Eaglercraft server and client. The client is mostly
+                just so that the people that are not as great at technology
+                can easily join the server without needing the ip, and also
+                giving a little more fps. So if you want to join (which I
+                highly encourage you to do since it took so long) is press
+                “Server” on the navigation header.
+            </p>
+
+            <p class="announcement-frame"></p>
+
+        </div>
+
+        <button id="announcement-exit">
+            Exit
+        </button>
+
+    </div>
+
+</div>
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const announcementOverlay =
+        document.getElementById("announcement-overlay");
+
+    const announcementExit =
+        document.getElementById("announcement-exit");
+
+    const announcementKey = "yoshiAnnouncementSeen";
+
+    if (localStorage.getItem(announcementKey) === "true") {
+        announcementOverlay.style.display = "none";
+    } else {
+        announcementOverlay.style.display = "flex";
+    }
+
+    announcementExit.addEventListener("click", function () {
+        localStorage.setItem(announcementKey, "true");
+        announcementOverlay.style.display = "none";
+    });
+
+});
+
+</script>
 </body></html>
