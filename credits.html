@@ -17,6 +17,102 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <title>Yoshi's</title>
+    <style>
+        .credits-page {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding: 120px 16px 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+        }
+        .credits-people {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .credit-card,
+        .other-credits {
+            background: #0e0e0e;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 32px;
+            box-sizing: border-box;
+        }
+        .credit-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 28px 26px;
+        }
+        .credit-head {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+            width: 100%;
+            padding-bottom: 18px;
+            margin-bottom: 18px;
+            border-bottom: 1px solid #fff;
+            /* divider is narrower than the card, like the mockup */
+            border-image: none;
+            max-width: 210px;
+            min-width: 0;
+        }
+        .credit-pfp {
+            flex: 0 0 auto;
+            width: 80px;
+            aspect-ratio: 1 / 1;      /* always a perfect circle */
+            border-radius: 50%;
+            object-fit: cover;        /* any pfp shape/size gets cropped to fill */
+            object-position: center;
+            background: #2a2a2a;
+            display: block;
+        }
+        .credit-name {
+            margin: 0;
+            font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+            font-weight: 400;
+            line-height: 1.1;
+            overflow-wrap: anywhere;
+        }
+        .credit-desc {
+            margin: 0;
+            text-align: center;
+            font-size: 1.05rem;
+            font-weight: 500;
+            line-height: 1.4;
+            max-width: 280px;
+        }
+        .other-credits {
+            padding: 14px 20px;
+            min-height: 190px;
+        }
+        .other-credits h2 {
+            margin: 0 0 4px;
+            font-size: clamp(1.8rem, 3vw, 2.3rem);
+            font-weight: 400;
+        }
+        .other-credits p {
+            margin: 0;
+            font-size: 1.05rem;
+            font-weight: 500;
+            line-height: 1.35;
+        }
+        .credits-note {
+            text-align: center;
+            font-size: 0.85rem;
+            opacity: 0.6;
+        }
+        .credits-note a { color: inherit; }
+
+        @media (max-width: 900px) {
+            .credits-people { grid-template-columns: 1fr; }
+            .credit-card { padding: 22px 20px; }
+            .credit-head { max-width: 260px; }
+        }
+    </style>
 </head>
 <body>
 
@@ -28,21 +124,54 @@
             <div class="head-right">
                 <p><a href="index.html">Home</a></p>
                 <p><a href="credits.html">Credits</a></p>
+                <p><a href="suggestions.html">Suggestions</a></p>
+                <p><a href="broken.html">Broken Game</a></p>
+                <p><a href="https://yoshijunior.github.io/server/">Server</a></p>
             </div>
             <div class="search-container">
                 <input type="text" placeholder="Search games..." class="search-bar" />
             </div>
         </header>
     </div>
-<main class="games-section">
-    <section class="section">
-        <h1>Me</h1>
-        <p>You can also view the source code at <a href="https://github.com/YoshiJunior/YoshiJunior.github.io">github.com/YoshiJunior/Yoshis</a></p>
-        <p>(Also credit to the person that said "any" for the game suggestion form)</p>
-        <img src="images/any.png">
+<main class="credits-page">
+    <section class="credits-people">
+        <article class="credit-card">
+            <div class="credit-head">
+                <img class="credit-pfp" src="https://lh3.googleusercontent.com/a/ACg8ocJsCL5t1PGmp1C9e8ttmCgb1UagD8tQ1CFI8WO-w_nHBwwA-exT=s272-p-k-rw-no" alt="Oliver">
+                <h2 class="credit-name">Oliver</h2>
+            </div>
+            <p class="credit-desc">Owner and creator of Yoshi’s and handles things on the website like games, website updates, and emails.</p>
+        </article>
+
+        <article class="credit-card">
+            <div class="credit-head">
+                <img class="credit-pfp" src="https://lh3.googleusercontent.com/a-/ALV-UjW-hAaXu5fhGocp6q4AnxMc15QJOW6Wo_bgo4k-7jEmh01vQWzE=s272-p-k-rw-no" alt="Theo">
+                <h2 class="credit-name">Theo</h2>
+            </div>
+            <p class="credit-desc">Handles suggestion and broken game forms because Oliver doesn’t like doing that</p>
+        </article>
+
+        <article class="credit-card">
+            <div class="credit-head">
+                <img class="credit-pfp" src="https://lh3.googleusercontent.com/a-/ALV-UjWJc-AKP_cKkvLLWwiOgxxMQOqFJGq1FTFLchUrfT8UN5a3Ni7c=s272-p-k-rw-no" alt="Jared">
+                <h2 class="credit-name">Jared</h2>
+            </div>
+            <p class="credit-desc">Idk what he does yet but its something</p>
+        </article>
     </section>
 
+    <section class="other-credits">
+        <h2>Other Credits</h2>
+        <p>Eli, added “super duper cool roblox obby”</p>
+        <p>Cooper, converting Eaglercraft to XHTML format</p>
+    </section>
+
+    <p class="credits-note">
+        Source code: <a href="https://github.com/YoshiJunior/YoshiJunior.github.io">github.com/YoshiJunior/Yoshis</a>
+    </p>
 </main>
 
 
 
+
+<script src="main.js"></script>

@@ -1,60 +1,46 @@
-  const searchInput = document.querySelector('.search-bar');
-  const gameCards = document.querySelectorAll('.game-card');
+const searchInput = document.querySelector('.search-bar');
 
-  searchInput.addEventListener('input', function () {
-    const query = this.value.toLowerCase();
+if (searchInput) {
+  const gameCards = Array.from(document.querySelectorAll('.game-card'));
+  const noResultsMessage = document.getElementById('noResultsMessage');
+  const initialQuery = new URLSearchParams(window.location.search).get('search') || '';
+
+  searchInput.value = initialQuery;
+
+  const filterGames = query => {
+    const normalizedQuery = query.trim().toLowerCase();
+    let resultsFound = false;
 
     gameCards.forEach(card => {
-      const title = card.querySelector('h3').textContent.toLowerCase();
-      if (title.includes(query)) {
-        card.style.display = 'block';
-      } else {
-        card.style.display = 'none';
+      const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
+      const matches = title.includes(normalizedQuery);
+      card.style.display = matches ? '' : 'none';
+      if (matches) resultsFound = true;
+    });
+
+    if (noResultsMessage) {
+      noResultsMessage.style.display = normalizedQuery && !resultsFound ? 'flex' : 'none';
+    }
+  };
+
+  if (gameCards.length) {
+    filterGames(initialQuery);
+    searchInput.addEventListener('input', () => filterGames(searchInput.value));
+  } else {
+    searchInput.addEventListener('keydown', event => {
+      const query = searchInput.value.trim();
+      if (event.key === 'Enter' && query) {
+        window.location.href = `index.html?search=${encodeURIComponent(query)}`;
       }
     });
+  }
+}
+
+const announcementOverlay = document.getElementById('announcement-overlay');
+const announcementExit = document.getElementById('announcement-exit');
+
+if (announcementOverlay && announcementExit) {
+  announcementExit.addEventListener('click', () => {
+    announcementOverlay.style.display = 'none';
   });
-
-
-  document.addEventListener('DOMContentLoaded', function () {
-    const searchBar = document.querySelector('.search-bar');
-    const noResultsMessage = document.getElementById('noResultsMessage');
-    const gameCards = document.querySelectorAll('.game-card');
-
-    searchBar.addEventListener('input', function() {
-        const query = searchBar.value.toLowerCase();
-        let resultsFound = false;
-
-        gameCards.forEach(card => {
-            const title = card.querySelector('h3').textContent.toLowerCase();
-            if (title.includes(query)) {
-                card.style.display = '';
-                resultsFound = true;
-            } else {
-                card.style.display = 'none';
-            }
-        });
-
-        if (!resultsFound && query !== '') {
-            noResultsMessage.style.display = 'flex';
-        } else {
-            noResultsMessage.style.display = 'none';
-        }
-    });
-});
-
-<script>
-
-const announcementOverlay =
-    document.getElementById("announcement-overlay");
-
-const announcementExit =
-    document.getElementById("announcement-exit");
-
-
-announcementExit.addEventListener("click", () => {
-
-    announcementOverlay.style.display = "none";
-
-});
-
-</script>
+}
