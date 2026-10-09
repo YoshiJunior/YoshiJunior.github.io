@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="VPlaza is a game/pr_xy site full of titles all kids want and need. Meet your expectations with Vplaza titles V1">
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet">
+    <title>Yoshi's</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <header>
+            <div class="head-left">
+                <img src="V.png" alt="logo">
+            </div>
+            <div class="head-right">
+                <p><a href="home.html">Home</a></p>
+                <p><a href="credits.html">Credits</a></p>
+                <p><a href="suggestions.html">Suggestions</a></p>
+                <p><a href="broken.html">Broken Game</a></p>
+                <p class="server-nav">
+    <a href="https://yoshijunior.github.io/server/">Server</a>
+    <span class="new-text">NEW!</span>
+</p>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search titles..." class="search-bar">
+            </div>
+        </header>
+    </div>
+
+    <div class="no-results-message" id="noResultsMessage" style="display:none;">
+        <h2>No results found...</h2>
+        <p>Try a different search term!</p>
+    </div>
+
+    <main class="titles-section">
+        <section class="section">
+            
+            <h2>All Titles</h2>
+            <div class="titles-grid">
+                <div class="game-card" data-url="titles/drive-mad.html">
+                    <img src="images/drive-mad.webp" alt="Drive Mad">
+                    <div class="game-info">
+                        <h3>Drive Mad</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/slope.html">
+                    <img src="images/slope.jpg" alt="Slope">
+                    <div class="game-info">
+                        <h3>Slope</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/subwaysurfers.html">
+                    <img src="images/subwaysurfers.webp" alt="Subway Surfers">
+                    <div class="game-info">
+                        <h3>Subway Surfers</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/basketball-stars.html">
+                    <img src="images/basketball-stars.png" alt="Basket Ball Stars">
+                    <div class="game-info">
+                        <h3>Basket Ball Stars</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/cookie-clicker.html">
+                    <img src="images/cookieclicker.avif" alt="Cookie Clicker">
+                    <div class="game-info">
+                        <h3>Cookie Clicker</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/snowrider3d.html">
+                    <img src="images/snowrider3d.jpg" alt="Snow Rider 3D">
+                    <div class="game-info">
+                        <h3>Snow Rider 3D</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/tanuki-sunset.html">
+                    <img src="images/tanuki-sunset.avif" alt="tanuki-sunset">
+                    <div class="game-info">
+                        <h3>Tanuki Sunset</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/eaglercraft.html">
+                    <img src="images/eaglercraft.jpg" alt="Eaglercraft">
+                    <div class="game-info">
+                        <h3>Eaglercraft</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/hover-racer-drive.html">
+                    <img src="images/hover-racer-drive.jpg" alt="Hover Racer Drive">
+                    <div class="game-info">
+                        <h3>Hover Racer Drive</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/geometry-dash.html">
+                    <img src="images/geometry-dash.jpg" alt="Geometry Dash">
+                    <div class="game-info">
+                        <h3>Geometry Dash</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/run3.html">
+                    <img src="images/run3.jpg" alt="Run 3">
+                    <div class="game-info">
+                        <h3>Run 3</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/slow-roads.html">
+                    <img src="images/slow-roads.jpg" alt="Slow Roads">
+                    <div class="game-info">
+                        <h3>Slow Roads</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/poly-track.html">
+                    <img src="images/poly-track.jpg" alt="polytrack">
+                    <div class="game-info">
+                        <h3>Poly Track</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/eggy-car.html">
+                    <img src="images/eggy-car.jpg" alt="eggycar">
+                    <div class="game-info">
+                        <h3>Eggy Car</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/vex6.html">
+                    <img src="images/vex6.jpg" alt="eggycar">
+                    <div class="game-info">
+                        <h3>Vex 6</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="https://yoshi1295junior.github.io/gunspin/">
+                    <img src="images/gun-spin.png" alt="Gunspin">
+                    <div class="game-info">
+                        <h3>Gunspin</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/Robloxobby.html">
+                    <img src="images/Robloxobby.webp" alt="Super duper cool obby robloxx">
+                    <div class="game-info">
+                        <h3>Super duper cool obby robloxx</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/TABS.html">
+                    <img src="images/Tabs.jpg" alt="Template">
+                    <div class="game-info">
+                        <h3>TABS</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/RvB.html">
+                    <img src="images/RvB.jpg" alt="Template">
+                    <div class="game-info">
+                        <h3>Red vs. Blue</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/paperio2.html">
+                    <img src="images/paperio2.jpg" alt="Paper.io 2">
+                    <div class="game-info">
+                        <h3>Paper.io 2</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/rocketleague.html">
+                    <img src="images/rocketleague.jpg" alt="Template">
+                    <div class="game-info">
+                        <h3>Rocket League</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="https://rockisdirt.github.io">
+                    <img src="images/sandboxels.jpg" alt="Sandboxels">
+                    <div class="game-info">
+                        <h3>Sandboxels</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/retrobowl.html">
+                    <img src="images/retrobowl.jpg" alt="Retro Bowl">
+                    <div class="game-info">
+                        <h3>Retro Bowl</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/blockblast.html">
+                    <img src="images/blockblast.jpg" alt="Block Blast">
+                    <div class="game-info">
+                        <h3>Block Blast</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/ducklife.html">
+                    <img src="images/ducklife.jpg" alt="Duck Life">
+                    <div class="game-info">
+                        <h3>Duck Life</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/ovo.html">
+                    <img src="images/ovo.jpg" alt="OvO">
+                    <div class="game-info">
+                        <h3>OvO</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/carkingarena.html">
+                    <img src="images/carkingarena.png" alt="Car King Arena 2">
+                    <div class="game-info">
+                        <h3>Car King Arena 2</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/drifthunters.html">
+                    <img src="images/drifthunters.jpg" alt="Drift Hunters">
+                    <div class="game-info">
+                        <h3>Drift Hunters</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/johnny-trigger.html">
+                    <img src="images/johnny-trigger.jpg" alt="Johnny Trigger">
+                    <div class="game-info">
+                        <h3>Johnny Trigger</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/escaperoad.html">
+                    <img src="images/escaperoad.jpg" alt="Escape Road">
+                    <div class="game-info">
+                        <h3>Escape Road</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/gba/firered/index.html">
+                    <img src="images/firered.jpg" alt="Pokemon FireRed">
+                    <div class="game-info">
+                        <h3>Pokemon FireRed</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/leafgreen.html">
+                    <img src="images/leafgreen.jpg" alt="LeafGreen">
+                    <div class="game-info">
+                        <h3>Pokemon LeafGreen</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/flash/badpiggies/index.html">
+                    <img src="images/badpiggies.jpg" alt="Bad Piggies">
+                    <div class="game-info">
+                        <h3>Bad Piggies</h3>
+                    </div>
+                </div>
+               <div class="game-card" data-url="titles/dunedash.html">
+                    <img src="images/dunedash.jpg" alt="Dune Dash">
+                    <div class="game-info">
+                        <h3>Dune Dash</h3>
+                    </div>
+                </div>
+               <div class="game-card" data-url="titles/idle-breakout.html">
+                    <img src="images/idle-breakout.jpg" alt="Idle Breakout">
+                    <div class="game-info">
+                        <h3>Idle Breakout</h3>
+                    </div>
+                </div>
+               <div class="game-card" data-url="titles/moto-x3m.html">
+                    <img src="images/moto-x3m.jpg" alt="Moto X3M">
+                    <div class="game-info">
+                        <h3>Moto X3M</h3>
+                    </div>
+                </div>
+               <div class="game-card" data-url="titles/fruit-ninja.html">
+                    <img src="images/fruit-ninja.jpg" alt="Fruit Ninja">
+                    <div class="game-info">
+                        <h3>Fruit Ninja</h3>
+                    </div>
+                </div>
+               <div class="game-card" data-url="titles/stickman-hook.html">
+                    <img src="images/stickman-hook.jpg" alt="Stickman Hook">
+                    <div class="game-info">
+                        <h3>Stickman Hook</h3>
+                    </div>
+                </div>
+               <div class="game-card" data-url="titles/build-an-army.html">
+                    <img src="images/build-an-army.jpg" alt="Build an Army">
+                    <div class="game-info">
+                        <h3>Build an Army</h3>
+                    </div>
+                </div>
+               <div class="game-card" data-url="titles/brawl-stars.html">
+                    <img src="images/brawl-stars.jpg" alt="Brawl Stars">
+                    <div class="game-info">
+                        <h3>Brawl Stars</h3>
+                    </div>
+                </div>
+               <div class="game-card" data-url="titles/level-devil.html">
+                    <img src="images/level-devil.jpg" alt="Level Devil">
+                    <div class="game-info">
+                        <h3>Level Devil</h3>
+                    </div>
+                </div>
+               <div class="game-card" data-url="titles/creepy-run.html">
+                    <img src="images/creepy-run.jpg" alt="Scooby-Doo! Creepy Run">
+                    <div class="game-info">
+                        <h3>Scooby-Doo! Creepy Run</h3>
+                    </div>
+                </div>
+            <div class="game-card" data-url="titles/monkey-mart.html">
+                    <img src="images/monkey-mart.jpg" alt="Monkey Mart">
+                    <div class="game-info">
+                        <h3>Monkey Mart</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/tiny-fishing.html">
+                    <img src="images/tiny-fishing.jpg" alt="Tiny Fishing">
+                    <div class="game-info">
+                        <h3>Tiny Fishing</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/parking-fury-3.html">
+                    <img src="images/parking-fury-3.jpg" alt="Parking Fury 3">
+                    <div class="game-info">
+                        <h3>Parking Fury 3</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/papa-s-pizzeria.html">
+                    <img src="https://papaspizzeria.io/data/image/options/papas-pizzeria-game-banner.jpg" alt="Papa's Pizzeria">
+                    <div class="game-info">
+                        <h3>Papa's Pizzeria</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/papa-s-freezeria.html">
+                    <img src="https://i.ytimg.com/vi/dt7xIIJwKIo/maxresdefault.jpg" alt="Papa's Freezeria">
+                    <div class="game-info">
+                        <h3>Papa's Freezeria</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/learn-to-fly-3.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcWY0SWG-FoQSB6EBupWpiF5kio9kv_CboeQ50rsgplnqRj8W-YEQ2iSU&amp;s=10" alt="Learn to Fly 3">
+                    <div class="game-info">
+                        <h3>Learn to Fly 3</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/bloons-td3.html">
+                    <img src="images/bloons-td3.webp" alt="Bloons TD3">
+                    <div class="game-info">
+                        <h3>Bloons TD3</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/jetpack-joyride.html">
+                    <img src="https://i.ytimg.com/vi/-gZwTPSr9nU/maxresdefault.jpg" alt="Jetpack Joyride">
+                    <div class="game-info">
+                        <h3>Jetpack Joyride</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/kartbros.html">
+                    <img src="https://store-images.s-microsoft.com/image/apps.45142.14077711198622072.87de44b8-a3b1-4457-9a12-07ae7d1d2d1d.fc852965-177e-4ff6-8b70-39285d803332" alt="KartBros">
+                    <div class="game-info">
+                        <h3>KartBros</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/highway-traffic.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREae8mg7_wrEjfo4cb7t1MIQr3mOIY3UR3oike_WpWB9KvNMeAjV0SaMg&amp;s=10" alt="Highway Traffic">
+                    <div class="game-info">
+                        <h3>Highway Traffic</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/happy-wheels.html">
+                    <img src="https://cdn.wallpapersafari.com/6/53/D7tQyp.png" alt="Happy Wheels">
+                    <div class="game-info">
+                        <h3>Happy Wheels</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/fnaf.html">
+                    <img src="https://fnaf-2.io/data/image/options/fnaf-2-banner-fnaf2io.jpg" alt="FNAF">
+                    <div class="game-info">
+                        <h3>FNAF</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/awesome-tanks-2.html">
+                    <img src="images/awesome-tanks-2.jpg" alt="Awesome Tanks 2">
+                    <div class="game-info">
+                        <h3>Awesome Tanks 2</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/candy-crush.html">
+                    <img src="https://store-images.s-microsoft.com/image/apps.52397.13510798882606697.1816f804-e7fd-4295-9275-23dec3563baf.2ef7ec2d-2e37-489e-b6ac-b5f5e44d429c?q=90&amp;w=480&amp;h=270" alt="Candy Crush">
+                    <div class="game-info">
+                        <h3>Candy Crush</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/crazy-cars.html">
+                    <img src="https://forum-files-playcanvas-com.s3.dualstack.eu-west-1.amazonaws.com/original/3X/3/5/359eb1a91da6abdaf0d3c8d0e022e71b29fb0659.png" alt="Crazy Cars">
+                    <div class="game-info">
+                        <h3>Crazy Cars</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/drift-boss.html">
+                    <img src="https://geometryarrow.io/data/image/game/drift-boss/drift-boss.png" alt="Drift Boss">
+                    <div class="game-info">
+                        <h3>Drift Boss</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/cluster-rush.html">
+                    <img src="https://thisgengaming.com/wp-content/uploads/2016/10/Clustertruck.jpg" alt="Cluster Rush">
+                    <div class="game-info">
+                        <h3>Cluster Rush</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/rooftop-snipers-2.html">
+                    <img src="images/rooftop-snipers-2.webp" alt="Rooftop Snipers 2">
+                    <div class="game-info">
+                        <h3>Rooftop Snipers 2</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/death-chase.html">
+                    <img src="images/death-chase.png" alt="Death Chase">
+                    <div class="game-info">
+                        <h3>Death Chase</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/wrestle-bros.html">
+                    <img src="images/wrestle-bros.png" alt="Wrestle Bros">
+                    <div class="game-info">
+                        <h3>Wrestle Bros</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/tag.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAv_Uzy4np2Kr5F6dXP4moxykzhLHV6501-UJwfoCMgw&amp;s" alt="TAG">
+                    <div class="game-info">
+                        <h3>TAG</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/tunnel-rush.html">
+                    <img src="https://tunnelrushgame.io/data/image/tunnel-rush.png" alt="Tunnel Rush">
+                    <div class="game-info">
+                        <h3>Tunnel Rush</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/time-shooter-2.html">
+                    <img src="https://imgs.crazytitles.com/time-shooter-2_16x9/20241113040556/time-shooter-2_16x9-cover?metadata=none&amp;quality=100&amp;width=1200&amp;height=630&amp;fit=crop" alt="Time Shooter 2">
+                    <div class="game-info">
+                        <h3>Time Shooter 2</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/volley-random.html">
+                    <img src="https://imgs.crazytitles.com/volley-random/20230131173658/volley-random-cover?metadata=none&amp;quality=100&amp;width=1200&amp;height=630&amp;fit=crop" alt="Volley Random">
+                    <div class="game-info">
+                        <h3>Volley Random</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/subway-surfers-havana.html">
+                    <img src="https://titles.kidzsearch.com/computer/thumbs/gamemntze-subway-surfers-havana-13204-img.png" alt="Subway Surfers Havana">
+                    <div class="game-info">
+                        <h3>Subway Surfers Havana</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/subway-surfers-beijing.html">
+                    <img src="https://titles.kidzsearch.com/computer/thumbs/gamemntze-subway-surfers-beijing-13743-img.png" alt="Subway Surfers Beijing">
+                    <div class="game-info">
+                        <h3>Subway Surfers Beijing</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/super-mario-64.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Super_Mario_64.png/250px-Super_Mario_64.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" alt="Super Mario 64">
+                    <div class="game-info">
+                        <h3>Super Mario 64</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/plants-vs-zombies.html">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/875/953/79/video-game-plants-vs-zombies-wallpaper-preview.jpg" alt="Plants vs. Zombies">
+                    <div class="game-info">
+                        <h3>Plants vs. Zombies</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/moto-x3m-2.html">
+                    <img src="https://sloperidergame.com/data/image/game/moto-x3m-2-cover.png" alt="Moto X3M 2">
+                    <div class="game-info">
+                        <h3>Moto X3M 2</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/moto-x3m-3.html">
+                    <img src="https://i.ytimg.com/vi/vPND_pQCAbk/hqdefault.jpg" alt="Moto X3M 3">
+                    <div class="game-info">
+                        <h3>Moto X3M 3</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/moto-x3m-pool-party.html">
+                    <img src="https://www.coolmathtitles.com/sites/default/files/MotoX3M-PoolParty_OG-logo.jpg" alt="Moto X3M Pool Party">
+                    <div class="game-info">
+                        <h3>Moto X3M Pool Party</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/moto-x3m-spooky-land.html">
+                    <img src="https://www.gamekarma.com/images/titles/234.png" alt="Moto X3M Spooky Land">
+                    <div class="game-info">
+                        <h3>Moto X3M Spooky Land</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/moto-x3m-winter.html">
+                    <img src="https://www.coolmathtitles.com/sites/default/files/MotoX3M-Winter_OG-logo.jpg" alt="Moto X3M Winter">
+                    <div class="game-info">
+                        <h3>Moto X3M Winter</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/guess-their-answer.html">
+                    <img src="https://imgs.crazytitles.com/guess-their-answer_16x9/20241122084004/guess-their-answer_16x9-cover?metadata=none&amp;quality=60&amp;height=4558" alt="Guess Their Answer">
+                    <div class="game-info">
+                        <h3>Guess Their Answer</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/hole-io.html">
+                    <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000069917/28c5a57b2711d70dbeb4dd55155691e8135a3069bad3455547392878c0162861" alt="Hole.io">
+                    <div class="game-info">
+                        <h3>Hole.io</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/hanger-2.html">
+                    <img src="https://static.igre123.com/slike/hanger-2_v2.webp" alt="Hanger 2">
+                    <div class="game-info">
+                        <h3>Hanger 2</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/get-away-shootout.html">
+                    <img src="https://play.unity.com/_next/image?url=https%3A%2F%2Fplay.unity.com%2Fapi%2Fv1%2Ffiles%2Ffile%2Fd14a367a-802a-43f6-bc76-ca6745f26df2%2Fcontent&amp;w=1080&amp;q=75" alt="Get Away Shootout">
+                    <div class="game-info">
+                        <h3>Get Away Shootout</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/war-the-knights.html">
+                    <img src="https://imgs.crazytitles.com/war-the-knights_16x9/20251104084824/war-the-knights_16x9-cover?metadata=none&amp;quality=60&amp;height=5582" alt="War the Knights">
+                    <div class="game-info">
+                        <h3>War the Knights</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/stickman-kombat-2d.html">
+                    <img src="https://ragdollhitonline.io/data/image/game/stickman-kombat-2d.jpg" alt="Stickman Kombat 2D">
+                    <div class="game-info">
+                        <h3>Stickman Kombat 2D</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/balatro.html">
+                    <img src="https://www.playstack.com/_astro/balatro_1280_720.BEEqF5xP.jpg" alt="Balatro">
+                    <div class="game-info">
+                        <h3>Balatro</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/ultrakill.html">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1229490/capsule_616x353.jpg?t=1783942574" alt="Ultrakill">
+                    <div class="game-info">
+                        <h3>Ultrakill</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/survive-lava-for-brainrots.html">
+                    <img src="https://tr.rbxcdn.com/180DAY-a6155dd6865b135c9b64138b2b6504e9/768/432/Image/Webp/noFilter" alt="Survive Lava for Brainrots">
+                    <div class="game-info">
+                        <h3>Survive Lava for Brainrots</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/destroy-a-lucky-block.html">
+                    <img src="https://tr.rbxcdn.com/180DAY-d409735352febe7edb597e9d2ca0de7b/768/432/Image/Webp/noFilter" alt="Destroy a Lucky Block">
+                    <div class="game-info">
+                        <h3>Destroy a Lucky Block</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/escape-from-tsunami.html">
+                    <img src="https://tr.rbxcdn.com/180DAY-132358a0d3066884ee81bc7deb286f84/500/280/Image/Jpeg/noFilter" alt="Escape from Tsunami">
+                    <div class="game-info">
+                        <h3>Escape from Tsunami</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/undertale_yellow/index.html">
+                    <img src="images/undertale_yellow.jpg" alt="Undertale Yellow">
+                    <div class="game-info">
+                        <h3>Undertale Yellow</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/chess.html">
+                    <img src="https://www.coolmathtitles.com/sites/default/files/styles/mobile_game_image/public/Chess_OG-logo.jpg.webp?itok=nsfD80kH" alt="Chess">
+                    <div class="game-info">
+                        <h3>Chess</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/melon-playground.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzx7DGuLVUXmfxSlPMz-wPHMU92pheK9C13jPmvpJYP5A3q634EZocuIA&amp;s=10" alt="Melon Playground">
+                    <div class="game-info">
+                        <h3>Melon Playground</h3>
+                    </div>
+                </div><div class="game-card" data-url="titles/sonic-the-hedgehog-2.html">
+                    <img src="https://myhotposters.com/cdn/shop/products/mQ0423_3896cc68-1934-4c93-8751-b376bb218d8d_1024x1024.jpg?v=1748540103" alt="Sonic the Hedgehog 2">
+                    <div class="game-info">
+                        <h3>Sonic the Hedgehog 2</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/edge-not-found.html">
+                    <img src="https://www.coolmathtitles.com/sites/default/files/edge-not-found.jpg" alt="Edge Not Found">
+                    <div class="game-info">
+                        <h3>Edge Not Found</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/2048.html">
+                    <img src="https://www.coolmathtitles.com/sites/default/files/2048_OG-logo.jpg" alt="2048">
+                    <div class="game-info">
+                        <h3>2048</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/wordle.html">
+                    <img src="https://www.internetmatters.org/wp-content/uploads/2022/02/wordle-logo.webp" alt="Wordle">
+                    <div class="game-info">
+                        <h3>Wordle</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/stack.html">
+                    <img src="images/stack.png" alt="Stack">
+                    <div class="game-info">
+                        <h3>Stack</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/spacebar-clicker.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPnY04FB9Zv1_SLnM9J2b8R6unE6JRNtAtC2ZvCh0yO_L-B5X4odOGz7TQ&amp;s=10" alt="Spacebar Clicker">
+                    <div class="game-info">
+                        <h3>Spacebar Clicker</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/radius-raid.html">
+                    <img src="https://m.gjcdn.net/game-thumbnail/500/26521-8shpcugp-v4.webp" alt="Radius Raid">
+                    <div class="game-info">
+                        <h3>Radius Raid</h3>
+                    </div>
+                </div>
+                <div class="game-card" data-url="titles/celeste.html">
+                    <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000006442/691ba3e0801180a9864cc8a7694b6f98097f9d9799bc7e3dc6db92f086759252" alt="Celeste">
+                    <div class="game-info">
+                        <h3>Celeste</h3>
+                    </div>
+                </div></div>
+</section>
+    </main>
+
+    <script src="cloak.js"></script>
+    <script src="main.js"></script>
+
+</body></html>
